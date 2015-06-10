@@ -29,7 +29,7 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_add) {
+        if (id == R.id.action_setting) {
             return true;
         }
 
