@@ -2,5 +2,6 @@
     <string name="app_name">reminder</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_setting">setting</string>
+    <string name="action_edit">edit</string>
+    <string name="action_add">add</string>
 </resources>

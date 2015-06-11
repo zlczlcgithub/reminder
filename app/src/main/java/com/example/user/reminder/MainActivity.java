@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -29,7 +30,13 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_setting) {
+        if (id == R.id.action_add) {
+            Toast.makeText(this,"add",Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        if( id== R.id.action_edit){
+            Toast.makeText(this,"edit",Toast.LENGTH_SHORT).show();
             return true;
         }
 
