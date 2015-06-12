@@ -1,5 +1,6 @@
 package com.example.user.reminder;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,7 +8,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+    public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_add) {
             Toast.makeText(this,"add",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(IntentDemo.this, AnotherActivity2.class)
             return true;
         }
 
