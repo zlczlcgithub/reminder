@@ -1,14 +1,18 @@
 package com.example.user.reminder;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 
-    public class MainActivity extends Activity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +36,10 @@ import android.widget.Toast;
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_add) {
-            Toast.makeText(this,"add",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(IntentDemo.this, AnotherActivity2.class)
+            Intent intent = new Intent();
+            intent.setAction(intent.ACTION_QUICK_CLOCK);
+            startActivity(intent);
+
             return true;
         }
 
