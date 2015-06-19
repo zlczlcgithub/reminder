@@ -1,31 +1,26 @@
 package com.example.user.reminder;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Toast;
+import android.app.Activity;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 
-
-public class MainActivity extends Activity {
+public class CheckBoxActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_check_box);
+        setTitle("CheckBoxActivity");
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_check_box, menu);
         return true;
     }
 
@@ -37,17 +32,13 @@ public class MainActivity extends Activity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_add) {
-            Intent intent = new Intent();
-            intent.setClass(MainActivity.this,CheckBoxActivity.class);
-            startActivity(intent);
-        }
-
-        if( id== R.id.action_edit){
-            Toast.makeText(this,"edit",Toast.LENGTH_SHORT).show();
+        if (id == R.id.action_settings) {
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+    Button btn=(Button)findViewById(R.id.button);
+    btn.
 }
