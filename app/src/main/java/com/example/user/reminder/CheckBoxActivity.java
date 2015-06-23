@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.app.Activity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 public class CheckBoxActivity extends Activity {
 
@@ -15,6 +16,26 @@ public class CheckBoxActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_box);
         setTitle("CheckBoxActivity");
+        Button btn=(Button)findViewById(R.id.button);
+        final CheckBox zlc = (CheckBox)findViewById((R.id.zlc));
+        final CheckBox qry = (CheckBox)findViewById((R.id.qry));
+        final CheckBox zxz = (CheckBox)findViewById((R.id.zxz));
+        btn.setOnClickListener(new Button.OnClickListener(){
+                                  public void onClick(View v){
+                                        String r = "";
+                                        if(zlc.isChecked()) {
+                                            r = r + "," + zlc.getText();
+                                        }
+                                        if (qry.isChecked()){
+                                          r = r + "," + qry.getText();
+                                       }
+                                        if(zxz.isChecked()){
+                                          r = r + "," + zxz.getText();
+                                       }
+                                       setTitle(r);
+                                   }
+                               }
+        );
     }
 
     @Override
@@ -39,6 +60,5 @@ public class CheckBoxActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    Button btn=(Button)findViewById(R.id.button);
-    btn.
+
 }
