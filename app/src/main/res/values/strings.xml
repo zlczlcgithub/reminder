@@ -6,4 +6,10 @@
     <string name="action_add">add</string>
     <string name="title_activity_check_box">CheckBoxActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_spinner">SpinnerActivity</string>
+    <string-array name="spinner">
+        <item>午睡</item>
+        <item>小睡</item>
+        <item>瞌睡</item>
+    </string-array>
 </resources>
