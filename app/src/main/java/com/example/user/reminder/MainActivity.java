@@ -1,23 +1,11 @@
 package com.example.user.reminder;
 
 import android.app.Activity;
-import android.app.ActivityGroup;
-import android.app.LocalActivityManager;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.TabHost;
-import android.widget.Toast;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.app.TabActivity;
 
 public class MainActivity extends Activity{
 
