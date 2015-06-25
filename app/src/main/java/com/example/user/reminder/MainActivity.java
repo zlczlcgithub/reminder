@@ -5,7 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TabHost;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 public class MainActivity extends Activity{
 
@@ -31,6 +39,22 @@ public class MainActivity extends Activity{
         specs3.setContent(R.id.tab3);
         specs3.setIndicator("third");
         tabHost.addTab(specs3);
+
+        ArrayList data = new ArrayList<Map<String,Object>>();
+        Map<String,Object> item = new HashMap<String, Object>();
+        item.put("Name","Jeremy");
+        item.put("sex","male");
+        data.add(item);
+        item = new HashMap<String, Object>();
+        item.put("Name","anna");
+        item.put("sex", "female");
+        data.add(item);
+
+
+        ListView listView = new ListView(this);
+        SimpleAdapter adapter = new SimpleAdapter(this,data,android.R.layout.simple_list_item_1,new String[]{"Name","sex"},new int[]{R.id.mview1,R.id.mview2});
+        listView.setAdapter(adapter);
+        setContentView(listView);
 
     }
 
