@@ -24,6 +24,10 @@
             android:name=".SpinnerActivity"
             android:label="@string/title_activity_spinner" >
         </activity>
+        <activity
+            android:name=".SetAlarm"
+            android:label="@string/title_activity_set_alarm" >
+        </activity>
     </application>
 
 </manifest>

@@ -24,7 +24,7 @@
         android:id="@+id/zxz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text = "朱軒志"
+        android:text = "永霸里各磅薄您"
         android:textStyle="bold"/>
     <Button
         android:id="@+id/button"

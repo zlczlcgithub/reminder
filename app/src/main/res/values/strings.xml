@@ -12,4 +12,5 @@
         <item>小睡</item>
         <item>瞌睡</item>
     </string-array>
+    <string name="title_activity_set_alarm">SetAlarm</string>
 </resources>
